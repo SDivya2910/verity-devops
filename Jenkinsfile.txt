@@ -42,7 +42,10 @@ pipeline {
                 sh 'mvn jacoco:report'
             }
         }
-        
+        stage('Build') {
+            steps {
+                sh 'mvn install -DskipTests'
+            }
 	
     }
 }
