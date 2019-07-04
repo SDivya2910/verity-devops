@@ -46,6 +46,6 @@ pipeline {
             steps {
                 sh 'mvn install -DskipTests'
             }
-	
+		}
     }
 }
